@@ -4,10 +4,10 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
-    [SerializeField] GameObject MainMenu;
-    [SerializeField] GameObject GameScene;
+    [SerializeField] GameObject mainMenu;
+    [SerializeField] GameObject gameScene;
     [SerializeField] GameObject panelPause;
-    [SerializeField] GameObject GameOverPannel;
+    [SerializeField] GameObject gameOverPannel;
 
     private void Awake()
     {
@@ -20,10 +20,29 @@ public class UIManager : MonoBehaviour
     }
     public void ShowMainMenu()
     {
-
+        HideAllPannel();
+        mainMenu.gameObject.SetActive(true);
+    }
+    public void ShowGameScene()
+    {
+        HideAllPannel();
+        gameScene.gameObject.SetActive(true);
+    }
+    public void ShowPauseMenu()
+    {
+        HideAllPannel();
+        panelPause.gameObject.SetActive(true);
+    }
+    public void ShowGameOverScene()
+    {
+        HideAllPannel();
+        gameOverPannel.gameObject.SetActive(true);
     }
     public void HideAllPannel()
     {
-
+        mainMenu.gameObject.SetActive(false);
+        gameScene.gameObject.SetActive(false);
+        panelPause.gameObject.SetActive(false);
+        gameOverPannel.gameObject.SetActive(false);
     }
 }
