@@ -19,8 +19,8 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 
 		[TCP2Header(Ramp Shading)]
 		
-		_RampThreshold ("Threshold", Range(0.01,1)) = 0.5
-		_RampSmoothing ("Smoothing", Range(0.001,1)) = 0.5
+		[TCP2Vector3FloatsDrawer(R,G,B,0,1,0,1,0,1)] _RampThresholdRGB ("Threshold (RGB)", Vector) = (0.5,0.5,0.5,1)
+		[TCP2Vector3FloatsDrawer(R,G,B,0,1,0,1,0,1)] _RampSmoothingRGB ("Smoothing (RGB)", Vector) = (0.1,0.1,0.1,1)
 		_LightWrapFactor ("Light Wrap Factor", Range(0,2)) = 0.5
 		[TCP2Separator]
 		
@@ -28,8 +28,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 		[Toggle(TCP2_SPECULAR)] _UseSpecular ("Enable Specular", Float) = 0
 		[TCP2ColorNoAlpha] _SpecularColor ("Specular Color", Color) = (0.5,0.5,0.5,1)
 		_SpecularShadowAttenuation ("Specular Shadow Attenuation", Float) = 0.25
-		_SpecularToonSize ("Toon Size", Range(0,1)) = 0.25
-		_SpecularToonSmoothness ("Toon Smoothness", Range(0.001,0.5)) = 0.05
+		_SpecularRoughnessPBR ("Roughness", Range(0,1)) = 0.5
 		[TCP2Separator]
 
 		[TCP2HeaderHelp(Emission)]
@@ -44,19 +43,13 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 		//Rim Direction
 		_RimDir ("Rim Direction", Vector) = (0,0,1,1)
 		[TCP2Separator]
-		
-		[TCP2HeaderHelp(Subsurface Scattering)]
-		[Toggle(TCP2_SUBSURFACE)] _UseSubsurface ("Enable Subsurface Scattering", Float) = 0
-		_SubsurfaceDistortion ("Distortion", Range(0,2)) = 0.2
-		_SubsurfacePower ("Power", Range(0.1,16)) = 3
-		_SubsurfaceScale ("Scale", Float) = 1
-		[TCP2ColorNoAlpha] _SubsurfaceColor ("Color", Color) = (0.5,0.5,0.5,1)
-		[TCP2ColorNoAlpha] _SubsurfaceAmbientColor ("Ambient Color", Color) = (0.5,0.5,0.5,1)
-		[TCP2Separator]
-		[TCP2HeaderHelp(Ambient Lighting)]
-		[Toggle(TCP2_AMBIENT)] _UseAmbient ("Enable Ambient/Indirect Diffuse", Float) = 0
-		//AMBIENT CUBEMAP
-		_AmbientCube ("Ambient Cubemap", Cube) = "_Skybox" {}
+
+		[TCP2HeaderHelp(Reflections)]
+		[Toggle(TCP2_REFLECTIONS)] _UseReflections ("Enable Reflections", Float) = 0
+		[TCP2ColorNoAlpha] _ReflectionColor ("Color", Color) = (1,1,1,1)
+		_ReflectionSmoothness ("Smoothness", Range(0,1)) = 0.5
+		_FresnelMin ("Fresnel Min", Range(0,2)) = 0
+		_FresnelMax ("Fresnel Max", Range(0,2)) = 1.5
 		[TCP2Separator]
 		
 		[TCP2HeaderHelp(Vertical Fog)]
@@ -111,30 +104,27 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			fixed4 _BaseColor;
 			half4 _Emission;
 			float _LightWrapFactor;
-			float _RampThreshold;
-			float _RampSmoothing;
+			float4 _RampThresholdRGB;
+			float4 _RampSmoothingRGB;
 			float4 _RimDir;
 			float _RimMin;
 			float _RimMax;
 			fixed4 _RimColor;
-			float _SpecularToonSize;
-			float _SpecularToonSmoothness;
+			float _SpecularRoughnessPBR;
 			float _SpecularShadowAttenuation;
 			fixed4 _SpecularColor;
-			float _SubsurfaceDistortion;
-			float _SubsurfacePower;
-			float _SubsurfaceScale;
-			fixed4 _SubsurfaceColor;
-			fixed4 _SubsurfaceAmbientColor;
 			float _Shadow_HSV_H;
 			float _Shadow_HSV_S;
 			float _Shadow_HSV_V;
 			fixed4 _SColor;
 			fixed4 _HColor;
+			float _ReflectionSmoothness;
+			float _FresnelMin;
+			float _FresnelMax;
+			fixed4 _ReflectionColor;
 			float _VerticalFogThreshold;
 			float _VerticalFogSmoothness;
 			fixed4 _VerticalFogColor;
-			samplerCUBE _AmbientCube;
 		CBUFFER_END
 
 		//--------------------------------
@@ -176,6 +166,28 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 		}
 		float4 ApplyHSV_4(float color, float h, float s, float v) { return ApplyHSV_4(color.xxxx, h, s, v); }
 		
+		//Specular help functions (from UnityStandardBRDF.cginc)
+		inline half3 SpecSafeNormalize(half3 inVec)
+		{
+			half dp3 = max(0.001f, dot(inVec, inVec));
+			return inVec * rsqrt(dp3);
+		}
+		
+		//GGX
+		#define TCP2_PI			3.14159265359
+		#define TCP2_INV_PI		0.31830988618f
+		#if defined(SHADER_API_MOBILE)
+			#define TCP2_EPSILON 1e-4f
+		#else
+			#define TCP2_EPSILON 1e-7f
+		#endif
+		inline half GGX(half NdotH, half roughness)
+		{
+			half a2 = roughness * roughness;
+			half d = (NdotH * a2 - NdotH) * NdotH + 1.0f;
+			return TCP2_INV_PI * a2 / (d * d + TCP2_EPSILON);
+		}
+		
 		// Built-in renderer (CG) to SRP (HLSL) bindings
 		#define UnityObjectToClipPos TransformObjectToHClip
 		#define _WorldSpaceLightPos0 _MainLightPosition
@@ -189,6 +201,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			{
 				"LightMode"="UniversalForward"
 			}
+			ZWrite On
 
 			HLSLPROGRAM
 			// Required to compile gles 2.0 with standard SRP library
@@ -210,8 +223,12 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			#pragma multi_compile_fragment _ _SHADOWS_SOFT
 			#pragma multi_compile _ LIGHTMAP_SHADOW_MIXING
 			#pragma multi_compile _ SHADOWS_SHADOWMASK
+			#pragma multi_compile_fragment _ _SCREEN_SPACE_OCCLUSION
 
 			// -------------------------------------
+			#pragma multi_compile _ DIRLIGHTMAP_COMBINED
+			#pragma multi_compile _ LIGHTMAP_ON
+			#pragma multi_compile_fog
 
 			//--------------------------------------
 			// GPU Instancing
@@ -224,8 +241,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			// Toony Colors Pro 2 keywords
 			#pragma shader_feature_local_fragment TCP2_SPECULAR
 			#pragma shader_feature_local_fragment TCP2_RIM_LIGHTING
-			#pragma shader_feature_local_fragment TCP2_AMBIENT
-			#pragma shader_feature_local_fragment TCP2_SUBSURFACE
+			#pragma shader_feature_local_fragment TCP2_REFLECTIONS
 			#pragma shader_feature_local_fragment TCP2_VERTICAL_FOG
 
 			// vertex input
@@ -233,6 +249,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			{
 				float4 vertex       : POSITION;
 				float3 normal       : NORMAL;
+				float2 uvLM         : TEXCOORD1;
 				float4 texcoord0 : TEXCOORD0;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
@@ -249,8 +266,8 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			#ifdef _ADDITIONAL_LIGHTS_VERTEX
 				half3 vertexLights : TEXCOORD2;
 			#endif
-				float3 pack0 : TEXCOORD3; /* pack0.xyz = objPos */
-				float2 pack1 : TEXCOORD4; /* pack1.xy = texcoord0 */
+				float4 pack0 : TEXCOORD3; /* pack0.xyz = objPos  pack0.w = fogFactor */
+				float4 pack1 : TEXCOORD4; /* pack1.xy = texcoord0  pack1.zw = uvLM */
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
 			};
@@ -265,6 +282,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 
 				// Texture Coordinates
 				output.pack1.xy.xy = input.texcoord0.xy * _BaseMap_ST.xy + _BaseMap_ST.zw;
+				output.pack1.zw = input.uvLM.xy * unity_LightmapST.xy + unity_LightmapST.zw;
 
 				float3 worldPos = mul(unity_ObjectToWorld, input.vertex).xyz;
 				output.pack0.xyz = input.vertex.xyz;
@@ -281,6 +299,9 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 
 				// world position
 				output.worldPosAndFog = float4(vertexInput.positionWS.xyz, 0);
+
+				// Computes fog factor per-vertex
+				output.worldPosAndFog.w = ComputeFogFactor(vertexInput.positionCS.z);
 
 				// normal
 				output.normal = normalize(vertexNormalInput.normalWS);
@@ -307,31 +328,31 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				float __ambientIntensity = ( 1.0 );
 				float3 __emission = ( _Emission.rgb );
 				float __lightWrapFactor = ( _LightWrapFactor );
-				float __rampThreshold = ( _RampThreshold );
-				float __rampSmoothing = ( _RampSmoothing );
+				float3 __rampThresholdRgb = ( _RampThresholdRGB.xyz );
+				float3 __rampSmoothingRgb = ( _RampSmoothingRGB.xyz );
 				float3 __rimDir = ( _RimDir.xyz );
 				float __rimMin = ( _RimMin );
 				float __rimMax = ( _RimMax );
 				float3 __rimColor = ( _RimColor.rgb );
 				float __rimStrength = ( 1.0 );
-				float __specularToonSize = ( _SpecularToonSize );
-				float __specularToonSmoothness = ( _SpecularToonSmoothness );
+				float __specularRoughnessPbr = ( _SpecularRoughnessPBR );
 				float __specularShadowAttenuation = ( _SpecularShadowAttenuation );
 				float3 __specularColor = ( _SpecularColor.rgb );
-				float __subsurfaceDistortion = ( _SubsurfaceDistortion );
-				float __subsurfacePower = ( _SubsurfacePower );
-				float __subsurfaceScale = ( _SubsurfaceScale );
-				float3 __subsurfaceColor = ( _SubsurfaceColor.rgb );
-				float3 __subsurfaceAmbientColor = ( _SubsurfaceAmbientColor.rgb );
-				float __subsurfaceThickness = ( 1.0 );
 				float __shadowHue = ( _Shadow_HSV_H );
 				float __shadowSaturation = ( _Shadow_HSV_S );
 				float __shadowValue = ( _Shadow_HSV_V );
 				float3 __shadowColor = ( _SColor.rgb );
 				float3 __highlightColor = ( _HColor.rgb );
+				float __reflectionSmoothness = ( _ReflectionSmoothness );
+				float __fresnelMin = ( _FresnelMin );
+				float __fresnelMax = ( _FresnelMax );
+				float3 __reflectionColor = ( _ReflectionColor.rgb );
 				float __verticalFogThreshold = ( _VerticalFogThreshold );
 				float __verticalFogSmoothness = ( _VerticalFogSmoothness );
 				float4 __verticalFogColor = ( _VerticalFogColor.rgba );
+
+				half ndv = abs(dot(viewDirWS, normalWS));
+				half ndvRaw = ndv;
 
 				// main texture
 				half3 albedo = __albedo.rgb;
@@ -352,7 +373,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 
 			#if defined(URP_10_OR_NEWER)
 				#if defined(SHADOWS_SHADOWMASK) && defined(LIGHTMAP_ON)
-					half4 shadowMask = SAMPLE_SHADOWMASK(input.uvLM);
+					half4 shadowMask = SAMPLE_SHADOWMASK(input.pack1.zw);
 				#elif !defined (LIGHTMAP_ON)
 					half4 shadowMask = unity_ProbesOcclusion;
 				#else
@@ -364,23 +385,30 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				Light mainLight = GetMainLight(shadowCoord);
 			#endif
 
+			#if defined(_SCREEN_SPACE_OCCLUSION)
+				float2 normalizedScreenSpaceUV = GetNormalizedScreenSpaceUV(input.positionCS);
+				AmbientOcclusionFactor aoFactor = GetScreenSpaceAmbientOcclusion(normalizedScreenSpaceUV);
+				mainLight.color *= aoFactor.directAmbientOcclusion;
+			#endif
+
 				// ambient or lightmap
-			#if defined(TCP2_AMBIENT)
+			#ifdef LIGHTMAP_ON
+				// Normal is required in case Directional lightmaps are baked
+				half3 bakedGI = SampleLightmap(input.pack1.zw, normalWS);
+				MixRealtimeAndBakedGI(mainLight, normalWS, bakedGI, half4(0, 0, 0, 0));
+			#else
 				// Samples SH fully per-pixel. SampleSHVertex and SampleSHPixel functions
 				// are also defined in case you want to sample some terms per-vertex.
 				half3 bakedGI = SampleSH(normalWS);
-			#else
-				half3 bakedGI = half3(0,0,0);
 			#endif
 				half occlusion = 1;
 
-				half3 indirectDiffuse = bakedGI;
-			#if defined(TCP2_AMBIENT)
-				
-				//Ambient Cubemap
-				indirectDiffuse.rgb += texCUBE(_AmbientCube, normalWS);
-				indirectDiffuse *= occlusion * albedo * __ambientIntensity;
+			#if defined(_SCREEN_SPACE_OCCLUSION)
+				occlusion = min(occlusion, aoFactor.indirectAmbientOcclusion);
 			#endif
+
+				half3 indirectDiffuse = bakedGI;
+				indirectDiffuse *= occlusion * albedo * __ambientIntensity;
 				emission += __emission;
 
 				half3 lightDir = mainLight.direction;
@@ -395,8 +423,8 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				half lightWrap = __lightWrapFactor;
 				ndl = (ndl + lightWrap) / (1 + lightWrap);
 				
-				half rampThreshold = __rampThreshold;
-				half rampSmooth = __rampSmoothing * 0.5;
+				half3 rampThreshold = 1 - __rampThresholdRgb;
+				half3 rampSmooth = __rampSmoothingRgb * 0.5;
 				ndl = saturate(ndl);
 				ramp = smoothstep(rampThreshold - rampSmooth, rampThreshold + rampSmooth, ndl);
 
@@ -423,11 +451,20 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				half3 accumulatedColors = ramp * lightColor.rgb;
 
 				#if defined(TCP2_SPECULAR)
-				//Blinn-Phong Specular
-				half3 h = normalize(lightDir + viewDirWS);
-				float ndh = max(0, dot (normalWS, h));
-				float spec = smoothstep(__specularToonSize + __specularToonSmoothness, __specularToonSize - __specularToonSmoothness,1 - (ndh / (1+__specularToonSmoothness)));
-				spec *= ndl;
+				//Specular: GGX
+				half3 halfDir = SpecSafeNormalize(lightDir + viewDirWS);
+				half roughness = __specularRoughnessPbr*__specularRoughnessPbr;
+				half nh = saturate(dot(normalWS, halfDir));
+				half spec = GGX(nh, saturate(roughness));
+				spec *= TCP2_PI * 0.05;
+				#ifdef UNITY_COLORSPACE_GAMMA
+					spec = max(0, sqrt(max(1e-4h, spec)));
+					half surfaceReduction = 1.0 - 0.28 * roughness * __specularRoughnessPbr;
+				#else
+					half surfaceReduction = 1.0 / (roughness*roughness + 1.0);
+				#endif
+				spec = max(0, spec * ndl);
+				spec *= surfaceReduction;
 				spec *= saturate(atten * ndl + __specularShadowAttenuation);
 				
 				//Apply specular
@@ -446,6 +483,9 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 					#endif
 					half atten = light.shadowAttenuation * light.distanceAttenuation;
 					half3 lightDir = light.direction;
+					#if defined(_SCREEN_SPACE_OCCLUSION)
+						light.color *= aoFactor.directAmbientOcclusion;
+					#endif
 					half3 lightColor = light.color.rgb;
 
 					half ndl = dot(normalWS, lightDir);
@@ -465,25 +505,24 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 					accumulatedColors += ramp * lightColor.rgb;
 
 					#if defined(TCP2_SPECULAR)
-					//Blinn-Phong Specular
-					half3 h = normalize(lightDir + viewDirWS);
-					float ndh = max(0, dot (normalWS, h));
-					float spec = smoothstep(__specularToonSize + __specularToonSmoothness, __specularToonSize - __specularToonSmoothness,1 - (ndh / (1+__specularToonSmoothness)));
-					spec *= ndl;
+					//Specular: GGX
+					half3 halfDir = SpecSafeNormalize(lightDir + viewDirWS);
+					half roughness = __specularRoughnessPbr*__specularRoughnessPbr;
+					half nh = saturate(dot(normalWS, halfDir));
+					half spec = GGX(nh, saturate(roughness));
+					spec *= TCP2_PI * 0.05;
+					#ifdef UNITY_COLORSPACE_GAMMA
+						spec = max(0, sqrt(max(1e-4h, spec)));
+						half surfaceReduction = 1.0 - 0.28 * roughness * __specularRoughnessPbr;
+					#else
+						half surfaceReduction = 1.0 / (roughness*roughness + 1.0);
+					#endif
+					spec = max(0, spec * ndl);
+					spec *= surfaceReduction;
 					spec *= saturate(atten * ndl + __specularShadowAttenuation);
 					
 					//Apply specular
 					emission.rgb += spec * lightColor.rgb * __specularColor;
-					#endif
-					
-					//Subsurface Scattering for additional lights
-					#if defined(TCP2_SUBSURFACE)
-					half3 ssLight = lightDir + normalWS * __subsurfaceDistortion;
-					half ssDot = pow(saturate(dot(viewDirWS, -ssLight)), __subsurfacePower) * __subsurfaceScale;
-					half3 ssColor = ((ssDot * __subsurfaceColor) + __subsurfaceAmbientColor) * __subsurfaceThickness;
-					ssColor *= atten;
-					ssColor *= lightColor;
-					color.rgb += albedo * ssColor;
 					#endif
 					#if defined(TCP2_RIM_LIGHTING)
 					// Rim light mask
@@ -509,7 +548,31 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				// apply ambient
 				color += indirectDiffuse;
 
+				#if defined(TCP2_REFLECTIONS)
+				half3 reflections = half3(0, 0, 0);
+
+				// World reflection
+				half reflectionRoughness = 1 - __reflectionSmoothness;
+				half3 reflectVector = reflect(-viewDirWS, normalWS);
+				half3 indirectSpecular = GlossyEnvironmentReflection(reflectVector, reflectionRoughness, occlusion);
+				half reflectionRoughness4 = max(pow(reflectionRoughness, 4), 6.103515625e-5);
+				float surfaceReductionRefl = 1.0 / (reflectionRoughness4 + 1.0);
+				reflections += indirectSpecular * surfaceReductionRefl;
+
+				half fresnelMin = __fresnelMin;
+				half fresnelMax = __fresnelMax;
+				half fresnelTerm = smoothstep(fresnelMin, fresnelMax, 1 - ndvRaw);
+				reflections *= fresnelTerm;
+
+				reflections *= __reflectionColor;
+				color.rgb += reflections;
+				#endif
+
 				color += emission;
+
+				// Mix the pixel color with fogColor. You can optionally use MixFogColor to override the fogColor with a custom one.
+				float fogFactor = input.worldPosAndFog.w;
+				color = MixFog(color, fogFactor);
 				
 				// Vertical Fog
 				#if defined(TCP2_VERTICAL_FOG)
@@ -608,6 +671,10 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 
 				#if defined(DEPTH_ONLY_PASS)
 					output.positionCS = TransformObjectToHClip(input.vertex.xyz);
+					#if defined(DEPTH_NORMALS_PASS)
+						float3 normalWS = TransformObjectToWorldNormal(input.normal);
+						output.normalWS = normalize(normalWS);
+					#endif
 				#elif defined(SHADOW_CASTER_PASS)
 					output.positionCS = GetShadowPositionHClip(input);
 				#else
@@ -632,9 +699,16 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				float __alpha = ( __albedo.a * __mainColor.a );
 
 				half3 viewDirWS = SafeNormalize(GetCameraPositionWS() - positionWS);
+				half ndv = abs(dot(viewDirWS, normalWS));
+				half ndvRaw = ndv;
+
 				half3 albedo = half3(1,1,1);
 				half alpha = __alpha;
 				half3 emission = half3(0,0,0);
+
+				#if defined(DEPTH_NORMALS_PASS)
+					return float4(PackNormalOctRectEncode(TransformWorldToViewDir(input.normalWS, true)), 0.0, 0.0);
+				#endif
 
 				return 0;
 			}
@@ -707,11 +781,42 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			ENDHLSL
 		}
 
+		Pass
+		{
+			Name "DepthNormals"
+			Tags
+			{
+				"LightMode" = "DepthNormals"
+			}
+
+			ZWrite On
+
+			HLSLPROGRAM
+			#pragma exclude_renderers gles gles3 glcore
+			#pragma target 2.0
+
+			//--------------------------------------
+			// GPU Instancing
+			#pragma multi_compile_instancing
+
+			// using simple #define doesn't work, we have to use this instead
+			#pragma multi_compile DEPTH_ONLY_PASS
+			#pragma multi_compile DEPTH_NORMALS_PASS
+
+			#pragma vertex ShadowDepthPassVertex
+			#pragma fragment ShadowDepthPassFragment
+
+			ENDHLSL
+		}
+
+		// Used for Baking GI. This pass is stripped from build.
+		UsePass "Universal Render Pipeline/Lit/Meta"
+
 	}
 
 	FallBack "Hidden/InternalErrorShader"
 	CustomEditor "ToonyColorsPro.ShaderGenerator.MaterialInspector_SG2"
 }
 
-/* TCP_DATA u config(unity:"6000.0.23f1";ver:"2.8.1";tmplt:"SG2_Template_URP";features:list["UNITY_5_4","UNITY_5_5","UNITY_5_6","UNITY_2017_1","UNITY_2018_1","UNITY_2018_2","UNITY_2018_3","UNITY_2019_1","UNITY_2019_2","UNITY_2019_3","UNITY_2019_4","UNITY_2020_1","WRAPPED_LIGHTING_CUSTOM","SHADOW_HSV","SPEC_LEGACY","SPECULAR","SPECULAR_TOON","SPECULAR_NO_ATTEN","SPECULAR_SHADER_FEATURE","EMISSION","RIM","RIM_DIR","RIM_LIGHTMASK","RIM_SHADER_FEATURE","SUBSURFACE_SCATTERING","SS_SHADER_FEATURE","SUBSURFACE_AMB_COLOR","CUBE_AMBIENT","AMBIENT_SHADER_FEATURE","VERTICAL_FOG","VERTICAL_FOG_LOCAL","VERTICAL_FOG_ALPHA","ENABLE_FOG","ENABLE_LIGHTMAPS","VERTICAL_FOG_SHADER_FEATURE","VERTICAL_FOG_SMOOTHSTEP","UNITY_2021_1","TEMPLATE_LWRP"];flags:list[];flags_extra:dict[];keywords:dict[RENDER_TYPE="Opaque",RampTextureDrawer="[TCP2Gradient]",RampTextureLabel="Ramp Texture",SHADER_TARGET="3.0",RIM_LABEL="Rim Lighting"];shaderProperties:list[];customTextures:list[];codeInjection:codeInjection(injectedFiles:list[];mark:False);matLayers:list[]) */
-/* TCP_HASH 454e0d41ad3d67ace9db62e9a30690a3 */
+/* TCP_DATA u config(unity:"6000.0.23f1";ver:"2.8.1";tmplt:"SG2_Template_URP";features:list["UNITY_5_4","UNITY_5_5","UNITY_5_6","UNITY_2017_1","UNITY_2018_1","UNITY_2018_2","UNITY_2018_3","UNITY_2019_1","UNITY_2019_2","UNITY_2019_3","UNITY_2019_4","UNITY_2020_1","WRAPPED_LIGHTING_CUSTOM","SHADOW_HSV","SPECULAR","SPECULAR_NO_ATTEN","SPECULAR_SHADER_FEATURE","EMISSION","RIM","RIM_DIR","RIM_LIGHTMASK","RIM_SHADER_FEATURE","SS_SHADER_FEATURE","SUBSURFACE_AMB_COLOR","VERTICAL_FOG","VERTICAL_FOG_LOCAL","VERTICAL_FOG_ALPHA","ENABLE_FOG","ENABLE_LIGHTMAPS","VERTICAL_FOG_SHADER_FEATURE","VERTICAL_FOG_SMOOTHSTEP","UNITY_2021_1","FOG","ENABLE_LIGHTMAP","RGB_RAMP","SPEC_PBR_GGX","GLOSSY_REFLECTIONS","REFLECTION_SHADER_FEATURE","SSAO","ENABLE_DEPTH_NORMALS_PASS","ENABLE_META_PASS","ZWRITE","TEMPLATE_LWRP","REFLECTION_FRESNEL"];flags:list[];flags_extra:dict[];keywords:dict[RENDER_TYPE="Opaque",RampTextureDrawer="[TCP2Gradient]",RampTextureLabel="Ramp Texture",SHADER_TARGET="3.0",RIM_LABEL="Rim Lighting"];shaderProperties:list[];customTextures:list[];codeInjection:codeInjection(injectedFiles:list[];mark:False);matLayers:list[]) */
+/* TCP_HASH 4101f3fa5be14dad24427c761a9a9b67 */

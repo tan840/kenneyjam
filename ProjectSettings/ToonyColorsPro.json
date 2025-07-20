@@ -6,7 +6,10 @@
     "CustomOutputPath": "Arts\\Toony Colors Pro\\Shaders Generated\\Examples\\Custom",
     "LastImplementationExportImportPath": "E:/Unity Projects/GameJams/kenneyjam2025/UnityProject/Assets",
     "OpenedFoldouts": [
-        "SHADER STATES"
+        "SHADER STATES",
+        "OPTIONS",
+        "LIGHTING",
+        "SPECIAL EFFECTS"
     ],
     "UseCustomFont": true,
     "CustomFont": {
