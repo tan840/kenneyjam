@@ -136,7 +136,7 @@ Material:
     - _Smoothness: 0.616
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SpecularRoughnessPBR: 0.672
+    - _SpecularRoughnessPBR: 0.465
     - _SpecularShadowAttenuation: 0.3
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
