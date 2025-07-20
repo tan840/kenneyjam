@@ -31,7 +31,7 @@ Material:
   - TCP2_VERTICAL_FOG
   m_InvalidKeywords: []
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -42,7 +42,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: a3b9d02e56e791f4ebd42c692ef5b937, type: 3}
+        m_Texture: {fileID: 2800000, guid: 107b71c9407a6054ab7bba6e839edd4c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -119,7 +119,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _LightWrapFactor: 0.218
+    - _LightWrapFactor: 0.468
     - _Metallic: 0.25
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -129,7 +129,7 @@ Material:
     - _ReceiveShadowsOff: 1
     - _ReflectionSmoothness: 0.8
     - _RimMax: 1.418
-    - _RimMin: 0.262
+    - _RimMin: 0.112
     - _Shadow_HSV_H: 0
     - _Shadow_HSV_S: 0
     - _Shadow_HSV_V: 0
@@ -137,7 +137,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpecularRoughnessPBR: 0.672
-    - _SpecularShadowAttenuation: 0.25
+    - _SpecularShadowAttenuation: 0.3
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
@@ -159,14 +159,14 @@ Material:
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RampSmoothingRGB: {r: 0.346, g: 0.177, b: 0.187, a: 1}
-    - _RampThresholdRGB: {r: 0.434, g: 0.659, b: 0.706, a: 1}
+    - _RampSmoothingRGB: {r: 0.766, g: 0.523, b: 0.514, a: 1}
+    - _RampThresholdRGB: {r: 0.742, g: 0.659, b: 0.706, a: 1}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
     - _RimDir: {r: 0.57, g: 0.04, b: 1, a: 1}
     - _SColor: {r: 1, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _VerticalFogColor: {r: 0, g: 0, b: 0, a: 1}
+    - _VerticalFogColor: {r: 0.03311472, g: 0, b: 0.990566, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

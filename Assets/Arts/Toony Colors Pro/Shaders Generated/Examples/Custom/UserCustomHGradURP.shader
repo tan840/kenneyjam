@@ -27,7 +27,6 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 		[TCP2HeaderHelp(Specular)]
 		[Toggle(TCP2_SPECULAR)] _UseSpecular ("Enable Specular", Float) = 0
 		[TCP2ColorNoAlpha] _SpecularColor ("Specular Color", Color) = (0.5,0.5,0.5,1)
-		_SpecularShadowAttenuation ("Specular Shadow Attenuation", Float) = 0.25
 		_SpecularRoughnessPBR ("Roughness", Range(0,1)) = 0.5
 		[TCP2Separator]
 
@@ -111,7 +110,6 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			float _RimMax;
 			fixed4 _RimColor;
 			float _SpecularRoughnessPBR;
-			float _SpecularShadowAttenuation;
 			fixed4 _SpecularColor;
 			float _Shadow_HSV_H;
 			float _Shadow_HSV_S;
@@ -266,8 +264,8 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 			#ifdef _ADDITIONAL_LIGHTS_VERTEX
 				half3 vertexLights : TEXCOORD2;
 			#endif
-				float4 pack0 : TEXCOORD3; /* pack0.xyz = objPos  pack0.w = fogFactor */
-				float4 pack1 : TEXCOORD4; /* pack1.xy = texcoord0  pack1.zw = uvLM */
+				float4 pack0 : TEXCOORD3; /* pack0.xy = texcoord0  pack0.zw = uvLM */
+				float pack1 : TEXCOORD4; /* pack1.x = fogFactor */
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
 			};
@@ -281,11 +279,10 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
 
 				// Texture Coordinates
-				output.pack1.xy.xy = input.texcoord0.xy * _BaseMap_ST.xy + _BaseMap_ST.zw;
-				output.pack1.zw = input.uvLM.xy * unity_LightmapST.xy + unity_LightmapST.zw;
+				output.pack0.xy.xy = input.texcoord0.xy * _BaseMap_ST.xy + _BaseMap_ST.zw;
+				output.pack0.zw = input.uvLM.xy * unity_LightmapST.xy + unity_LightmapST.zw;
 
 				float3 worldPos = mul(unity_ObjectToWorld, input.vertex).xyz;
-				output.pack0.xyz = input.vertex.xyz;
 				VertexPositionInputs vertexInput = GetVertexPositionInputs(input.vertex.xyz);
 			#if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
 				output.shadowCoord = GetShadowCoord(vertexInput);
@@ -322,7 +319,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				half3 viewDirWS = SafeNormalize(GetCameraPositionWS() - positionWS);
 
 				// Shader Properties Sampling
-				float4 __albedo = ( TCP2_TEX2D_SAMPLE(_BaseMap, _BaseMap, input.pack1.xy).rgba );
+				float4 __albedo = ( TCP2_TEX2D_SAMPLE(_BaseMap, _BaseMap, input.pack0.xy).rgba );
 				float4 __mainColor = ( _BaseColor.rgba );
 				float __alpha = ( __albedo.a * __mainColor.a );
 				float __ambientIntensity = ( 1.0 );
@@ -336,7 +333,6 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				float3 __rimColor = ( _RimColor.rgb );
 				float __rimStrength = ( 1.0 );
 				float __specularRoughnessPbr = ( _SpecularRoughnessPBR );
-				float __specularShadowAttenuation = ( _SpecularShadowAttenuation );
 				float3 __specularColor = ( _SpecularColor.rgb );
 				float __shadowHue = ( _Shadow_HSV_H );
 				float __shadowSaturation = ( _Shadow_HSV_S );
@@ -373,7 +369,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 
 			#if defined(URP_10_OR_NEWER)
 				#if defined(SHADOWS_SHADOWMASK) && defined(LIGHTMAP_ON)
-					half4 shadowMask = SAMPLE_SHADOWMASK(input.pack1.zw);
+					half4 shadowMask = SAMPLE_SHADOWMASK(input.pack0.zw);
 				#elif !defined (LIGHTMAP_ON)
 					half4 shadowMask = unity_ProbesOcclusion;
 				#else
@@ -394,7 +390,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				// ambient or lightmap
 			#ifdef LIGHTMAP_ON
 				// Normal is required in case Directional lightmaps are baked
-				half3 bakedGI = SampleLightmap(input.pack1.zw, normalWS);
+				half3 bakedGI = SampleLightmap(input.pack0.zw, normalWS);
 				MixRealtimeAndBakedGI(mainLight, normalWS, bakedGI, half4(0, 0, 0, 0));
 			#else
 				// Samples SH fully per-pixel. SampleSHVertex and SampleSHPixel functions
@@ -465,7 +461,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				#endif
 				spec = max(0, spec * ndl);
 				spec *= surfaceReduction;
-				spec *= saturate(atten * ndl + __specularShadowAttenuation);
+				spec *= atten;
 				
 				//Apply specular
 				emission.rgb += spec * lightColor.rgb * __specularColor;
@@ -519,7 +515,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 					#endif
 					spec = max(0, spec * ndl);
 					spec *= surfaceReduction;
-					spec *= saturate(atten * ndl + __specularShadowAttenuation);
+					spec *= atten;
 					
 					//Apply specular
 					emission.rgb += spec * lightColor.rgb * __specularColor;
@@ -576,7 +572,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				
 				// Vertical Fog
 				#if defined(TCP2_VERTICAL_FOG)
-				half vertFogThreshold = input.pack0.xyz.y;
+				half vertFogThreshold = input.worldPosAndFog.xyz.y;
 				half verticalFogThreshold = __verticalFogThreshold;
 				half verticalFogSmooothness = __verticalFogSmoothness;
 				half verticalFogMin = verticalFogThreshold - verticalFogSmooothness;
@@ -621,8 +617,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				float4 positionCS     : SV_POSITION;
 				float3 normal         : NORMAL;
 				float3 pack0 : TEXCOORD1; /* pack0.xyz = positionWS */
-				float3 pack1 : TEXCOORD2; /* pack1.xyz = objPos */
-				float2 pack2 : TEXCOORD3; /* pack2.xy = texcoord0 */
+				float2 pack1 : TEXCOORD2; /* pack1.xy = texcoord0 */
 			#if defined(DEPTH_ONLY_PASS)
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
@@ -661,13 +656,12 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				float3 worldNormalUv = mul(unity_ObjectToWorld, float4(input.normal, 1.0)).xyz;
 
 				// Texture Coordinates
-				output.pack2.xy.xy = input.texcoord0.xy * _BaseMap_ST.xy + _BaseMap_ST.zw;
+				output.pack1.xy.xy = input.texcoord0.xy * _BaseMap_ST.xy + _BaseMap_ST.zw;
 
 				float3 worldPos = mul(unity_ObjectToWorld, input.vertex).xyz;
 				VertexPositionInputs vertexInput = GetVertexPositionInputs(input.vertex.xyz);
 				output.normal = normalize(worldNormalUv);
 				output.pack0.xyz = vertexInput.positionWS;
-				output.pack1.xyz = input.vertex.xyz;
 
 				#if defined(DEPTH_ONLY_PASS)
 					output.positionCS = TransformObjectToHClip(input.vertex.xyz);
@@ -694,7 +688,7 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 				float3 normalWS = normalize(input.normal);
 
 				// Shader Properties Sampling
-				float4 __albedo = ( TCP2_TEX2D_SAMPLE(_BaseMap, _BaseMap, input.pack2.xy).rgba );
+				float4 __albedo = ( TCP2_TEX2D_SAMPLE(_BaseMap, _BaseMap, input.pack1.xy).rgba );
 				float4 __mainColor = ( _BaseColor.rgba );
 				float __alpha = ( __albedo.a * __mainColor.a );
 
@@ -818,5 +812,5 @@ Shader "Toony Colors Pro 2/User/CustomHGradURP"
 	CustomEditor "ToonyColorsPro.ShaderGenerator.MaterialInspector_SG2"
 }
 
-/* TCP_DATA u config(unity:"6000.0.23f1";ver:"2.8.1";tmplt:"SG2_Template_URP";features:list["UNITY_5_4","UNITY_5_5","UNITY_5_6","UNITY_2017_1","UNITY_2018_1","UNITY_2018_2","UNITY_2018_3","UNITY_2019_1","UNITY_2019_2","UNITY_2019_3","UNITY_2019_4","UNITY_2020_1","WRAPPED_LIGHTING_CUSTOM","SHADOW_HSV","SPECULAR","SPECULAR_NO_ATTEN","SPECULAR_SHADER_FEATURE","EMISSION","RIM","RIM_DIR","RIM_LIGHTMASK","RIM_SHADER_FEATURE","SS_SHADER_FEATURE","SUBSURFACE_AMB_COLOR","VERTICAL_FOG","VERTICAL_FOG_LOCAL","VERTICAL_FOG_ALPHA","ENABLE_FOG","ENABLE_LIGHTMAPS","VERTICAL_FOG_SHADER_FEATURE","VERTICAL_FOG_SMOOTHSTEP","UNITY_2021_1","FOG","ENABLE_LIGHTMAP","RGB_RAMP","SPEC_PBR_GGX","GLOSSY_REFLECTIONS","REFLECTION_SHADER_FEATURE","SSAO","ENABLE_DEPTH_NORMALS_PASS","ENABLE_META_PASS","ZWRITE","TEMPLATE_LWRP","REFLECTION_FRESNEL"];flags:list[];flags_extra:dict[];keywords:dict[RENDER_TYPE="Opaque",RampTextureDrawer="[TCP2Gradient]",RampTextureLabel="Ramp Texture",SHADER_TARGET="3.0",RIM_LABEL="Rim Lighting"];shaderProperties:list[];customTextures:list[];codeInjection:codeInjection(injectedFiles:list[];mark:False);matLayers:list[]) */
-/* TCP_HASH 4101f3fa5be14dad24427c761a9a9b67 */
+/* TCP_DATA u config(unity:"6000.0.23f1";ver:"2.8.1";tmplt:"SG2_Template_URP";features:list["UNITY_5_4","UNITY_5_5","UNITY_5_6","UNITY_2017_1","UNITY_2018_1","UNITY_2018_2","UNITY_2018_3","UNITY_2019_1","UNITY_2019_2","UNITY_2019_3","UNITY_2019_4","UNITY_2020_1","WRAPPED_LIGHTING_CUSTOM","SHADOW_HSV","SPECULAR","SPECULAR_SHADER_FEATURE","EMISSION","RIM","RIM_DIR","RIM_LIGHTMASK","RIM_SHADER_FEATURE","SS_SHADER_FEATURE","SUBSURFACE_AMB_COLOR","VERTICAL_FOG","VERTICAL_FOG_ALPHA","ENABLE_FOG","ENABLE_LIGHTMAPS","VERTICAL_FOG_SHADER_FEATURE","VERTICAL_FOG_SMOOTHSTEP","UNITY_2021_1","FOG","ENABLE_LIGHTMAP","RGB_RAMP","SPEC_PBR_GGX","GLOSSY_REFLECTIONS","REFLECTION_SHADER_FEATURE","SSAO","ENABLE_DEPTH_NORMALS_PASS","ENABLE_META_PASS","ZWRITE","REFLECTION_FRESNEL","TEMPLATE_LWRP"];flags:list[];flags_extra:dict[];keywords:dict[RENDER_TYPE="Opaque",RampTextureDrawer="[TCP2Gradient]",RampTextureLabel="Ramp Texture",SHADER_TARGET="3.0",RIM_LABEL="Rim Lighting"];shaderProperties:list[];customTextures:list[];codeInjection:codeInjection(injectedFiles:list[];mark:False);matLayers:list[]) */
+/* TCP_HASH 09cc16766046d55ff1033a88d22b19cf */

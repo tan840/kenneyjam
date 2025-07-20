@@ -8,17 +8,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: character B
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 4800000, guid: ae993cff28a6f3b4a93a21c4167aa2b6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - TCP2_RIM_LIGHTING
+  - TCP2_SPECULAR
+  - TCP2_VERTICAL_FOG
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
   m_LockedProperties: 
@@ -26,7 +28,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 2b03b3197a05d4a4d9c1d3ae26708814, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7b4e119fcf836d04c80c3187daec58bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -98,29 +100,59 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
+    - _FresnelMax: 1.5
+    - _FresnelMin: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _LightWrapFactor: 0.487
     - _Metallic: 0.445
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _ReceiveShadowsOff: 1
+    - _ReflectionSmoothness: 0.5
+    - _RimMax: 1.012
+    - _RimMin: 0.481
+    - _Shadow_HSV_H: 0
+    - _Shadow_HSV_S: 0
+    - _Shadow_HSV_V: 0
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SpecularRoughnessPBR: 0.928
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UVSec: 0
+    - _UseReflections: 0
+    - _UseRim: 1
+    - _UseSpecular: 1
+    - _UseVerticalFog: 1
+    - _VerticalFogSmoothness: 0.18
+    - _VerticalFogThreshold: 0.14
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - __BeginGroup_ShadowHSV: 0
+    - __EndGroup: 0
+    - __dummy__: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 0.807862, b: 0.5801887, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RampSmoothingRGB: {r: 0.57, g: 0.701, b: 0.477, a: 1}
+    - _RampThresholdRGB: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _RimDir: {r: 0.26, g: 0, b: 1, a: 1}
+    - _SColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _VerticalFogColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8497351608630355604
