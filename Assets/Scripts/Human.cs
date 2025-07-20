@@ -6,7 +6,8 @@ public class Human : Character
     {
         base.Die();
         // Play human-specific death effect or sound
-        Debug.Log("Human died!");
+        GameManager.Instance.AddKill(false);
+        //Debug.Log("Human died!");
     }
 
     void Update()

@@ -13,21 +13,33 @@ public class CharacterSpawner : MonoBehaviour
     public List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
 
     [Header("Prefabs")]
-    public GameObject[] zombiePrefabs;
-    public GameObject[] humanPrefabs;
+    [SerializeField] GameObject[] zombiePrefabs;
+    [SerializeField] GameObject[] humanPrefabs;
+
 
     [Header("Debug Settings")]
     public float gizmoRadius = 0.5f;
 
+
+
     void Start()
     {
         SpawnAll();
+        GameManager.Instance.UpdateUI();
     }
 
     public void SpawnAll()
     {
         foreach (var point in spawnPoints)
         {
+            if (point.isZombie)
+            {
+                GameManager.Instance.ZombieKills++;
+            }
+            else
+            {
+                GameManager.Instance.HumanKills++;
+            }
             GameObject prefab = point.isZombie
                 ? GetRandomPrefab(zombiePrefabs)
                 : GetRandomPrefab(humanPrefabs);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3067280388671215792}
   - component: {fileID: 6026726113536141825}
   - component: {fileID: 39571481483386420}
+  - component: {fileID: 4823917615714619236}
   m_Layer: 0
   m_Name: ZombieB
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  isZombie: 0
   shouldChase: 0
 --- !u!195 &6026726113536141825
 NavMeshAgent:
@@ -92,6 +94,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.10368347, y: 0.25415438, z: 0.096860796}
   m_Center: {x: 0.0013523102, y: 0.13995305, z: -0.0023767203}
+--- !u!114 &4823917615714619236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5463501152435691840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712afb6178efce54498d2acd587d7c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6697642108171464636
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject gameScene;
     [SerializeField] GameObject panelPause;
     [SerializeField] GameObject gameOverPannel;
+    [SerializeField] GameObject gameWonPannel;
 
     private void Awake()
     {
@@ -37,6 +38,11 @@ public class UIManager : MonoBehaviour
     {
         HideAllPannel();
         gameOverPannel.gameObject.SetActive(true);
+    }
+    public void ShowGameWonScene()
+    {
+        HideAllPannel();
+        gameWonPannel.gameObject.SetActive(true);
     }
     public void HideAllPannel()
     {

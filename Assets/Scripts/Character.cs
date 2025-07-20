@@ -4,7 +4,7 @@ public abstract class Character : MonoBehaviour
 {
     public float health = 100f;
     protected bool isDead = false;
-
+    public bool isZombie = false;
     protected virtual void Start()
     {
         // Optional: Set up any common things
@@ -36,7 +36,7 @@ public abstract class Character : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Dead");
+            //Debug.Log("Dead");
             TakeDamage(100f); // Instant death
         }
     }
