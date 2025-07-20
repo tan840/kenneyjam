@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -440,6 +444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -622,6 +630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-side-exit
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f4c68618d8bcbd4e8c15f7064adb2d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -708,6 +720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -773,6 +789,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
       propertyPath: m_Name
       value: road-crossing (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -840,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -900,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -967,6 +995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-side (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1027,6 +1059,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1161,6 +1197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-path (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1231,6 +1271,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1475,6 +1519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1602,6 +1650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1673,6 +1725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1733,6 +1789,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1855,6 +1915,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
       propertyPath: m_Name
       value: road-side (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2050,6 +2114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2110,6 +2178,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
       propertyPath: m_Name
       value: road-crossroad-line (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2172,6 +2244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2233,6 +2309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-intersection (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2293,6 +2373,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2365,6 +2449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2425,6 +2513,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
       propertyPath: m_Name
       value: road-side (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2497,6 +2589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2567,6 +2663,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
       propertyPath: m_Name
       value: road-crossroad-path
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2643,6 +2743,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2846,6 +2950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2907,6 +3015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2916,6 +3028,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
   m_PrefabInstance: {fileID: 2109504405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &285174590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+  m_PrefabInstance: {fileID: 1851998012726078789}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &285701283
 PrefabInstance:
@@ -3453,6 +3570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-path (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3642,6 +3763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3702,6 +3827,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3764,6 +3893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3824,6 +3957,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3891,6 +4028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-bend-square (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3945,71 +4086,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &366444274
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1384324320}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.58409476
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.012801787
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2049929814205202405, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 1eebbcb8d28798b4ba00f2d9afc9ac04, type: 2}
-    - target: {fileID: 919132149155446097, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Name
-      value: character A
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 891ea1b9310083949abc345ff8c85590, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 615079a23b765564fa6915c541368ffd, type: 3}
 --- !u!1001 &376065506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4127,6 +4203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4187,6 +4267,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 737a55af495cb9a419a521bcf1dd98a6, type: 3}
       propertyPath: m_Name
       value: road-bend (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 737a55af495cb9a419a521bcf1dd98a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4249,6 +4333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4309,6 +4397,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
       propertyPath: m_Name
       value: road-side
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4376,6 +4468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4436,6 +4532,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4725,7 +4825,7 @@ Transform:
   m_GameObject: {fileID: 420953895}
   serializedVersion: 2
   m_LocalRotation: {x: -0.21295151, y: 0.7820247, z: -0.3610876, w: -0.46119937}
-  m_LocalPosition: {x: -0.41999996, y: 1.14, z: 0.58}
+  m_LocalPosition: {x: -0.41999996, y: 1.164, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4828,6 +4928,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 643c7c8565074de42aa76e4610502764, type: 3}
       propertyPath: m_Name
       value: road-driveway-single (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 643c7c8565074de42aa76e4610502764, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4952,6 +5056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5012,6 +5120,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5089,6 +5201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5149,6 +5265,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 737a55af495cb9a419a521bcf1dd98a6, type: 3}
       propertyPath: m_Name
       value: road-bend (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 737a55af495cb9a419a521bcf1dd98a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5326,6 +5446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-driveway-single
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 643c7c8565074de42aa76e4610502764, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5444,6 +5568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5509,6 +5637,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5764,6 +5896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5824,6 +5960,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5890,6 +6030,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6014,6 +6158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6136,6 +6284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6170,6 +6322,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
   m_PrefabInstance: {fileID: 63466924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &551860540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+  m_PrefabInstance: {fileID: 5412357835786147540}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &553369587 stripped
 Transform:
@@ -6232,6 +6389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6292,6 +6453,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
       propertyPath: m_Name
       value: road-bend-square (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6388,6 +6553,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6657,6 +6826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6728,6 +6901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6788,6 +6965,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6886,6 +7067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-curve
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 26d27e08c92363d4baa7b43a79617995, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6956,6 +7141,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7100,6 +7289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-intersection (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7161,6 +7354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-bend-square
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7221,6 +7418,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7287,6 +7488,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 26d27e08c92363d4baa7b43a79617995, type: 3}
       propertyPath: m_Name
       value: road-curve (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 26d27e08c92363d4baa7b43a79617995, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7420,6 +7625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-end-round (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7480,6 +7689,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7552,6 +7765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-end-round (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7612,6 +7829,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7825,6 +8046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8024,6 +8249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8147,6 +8376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-line (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8207,6 +8440,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8289,6 +8526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-intersection (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8350,6 +8591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8369,6 +8614,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b74079f0f7bc6444cab8e282c65213c1, type: 3}
   m_PrefabInstance: {fileID: 700602937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &845752322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+  m_PrefabInstance: {fileID: 86720713807748731}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &846107273
 GameObject:
@@ -8744,6 +8994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8871,6 +9125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8941,6 +9199,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
       propertyPath: m_Name
       value: road-end-round (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9146,6 +9408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9217,6 +9483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9277,6 +9547,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (108)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9347,6 +9621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-end
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 673f20cea1e9e8b4b9980ce00768a78f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9408,6 +9686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9468,6 +9750,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
       propertyPath: m_Name
       value: road-bend-square (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9741,6 +10027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9801,6 +10091,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9930,6 +10224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9990,6 +10288,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
       propertyPath: m_Name
       value: road-side (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10052,6 +10354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10113,6 +10419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10173,6 +10483,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
       propertyPath: m_Name
       value: road-crossroad-line (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10359,6 +10673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10369,71 +10687,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61b4c682efbeba14a8d37e4ef9fcd0a2, type: 3}
   m_PrefabInstance: {fileID: 1012296405}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1023878176
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1384324320}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.44700003
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.26799998
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071079
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.70710576
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2049929814205202405, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: fdd4b7ead67fa5e42aa8bbb9d5a83798, type: 2}
-    - target: {fileID: 919132149155446097, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Name
-      value: character B
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 891ea1b9310083949abc345ff8c85590, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 615079a23b765564fa6915c541368ffd, type: 3}
 --- !u!4 &1026185543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
@@ -10603,7 +10856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f4c68618d8bcbd4e8c15f7064adb2d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f4c68618d8bcbd4e8c15f7064adb2d1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10640,6 +10893,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9f4c68618d8bcbd4e8c15f7064adb2d1, type: 3}
       propertyPath: m_Name
       value: road-side-exit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f4c68618d8bcbd4e8c15f7064adb2d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10732,6 +10989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-bend-square (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10793,6 +11054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10853,6 +11118,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10987,6 +11256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11047,6 +11320,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11181,6 +11458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-side (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9368b18c9b2191042bab687ce490cdd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11271,7 +11552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11309,6 +11590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11323,11 +11608,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 88630959ff090eb4285a4962796e0cfd, type: 3}
   m_PrefabInstance: {fileID: 743775419}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1167672903 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-  m_PrefabInstance: {fileID: 1023878176}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1168435884 stripped
 Transform:
@@ -11404,6 +11684,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
       propertyPath: m_Name
       value: road-crossing (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11598,6 +11882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11658,6 +11946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
       propertyPath: m_Name
       value: road-crossing (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11786,6 +12078,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11923,6 +12219,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
       propertyPath: m_Name
       value: road-intersection (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12342,6 +12642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-intersection (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12654,6 +12958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12714,6 +13022,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
       propertyPath: m_Name
       value: road-intersection (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12791,6 +13103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12851,6 +13167,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
       propertyPath: m_Name
       value: road-end-round (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13004,9 +13324,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1373622044}
   - component: {fileID: 1373622046}
+  - component: {fileID: 1373622047}
+  - component: {fileID: 1373622049}
+  - component: {fileID: 1373622048}
   m_Layer: 0
   m_Name: CarParent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13020,7 +13343,7 @@ Transform:
   m_GameObject: {fileID: 1373622041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.27, y: 0, z: 0.11}
+  m_LocalPosition: {x: -1.27, y: 0.024, z: 0.18}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -13051,6 +13374,76 @@ MonoBehaviour:
   frontLeftWheel: {fileID: 0}
   frontRightWheel: {fileID: 0}
   maxWheelTurnAngle: 30
+--- !u!195 &1373622047
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373622041}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.66
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.06
+  m_BaseOffset: -0.05
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!54 &1373622048
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373622041}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1373622049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373622041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.312552, y: 0.89634746, z: 2.5159326}
+  m_Center: {x: 0.0023326278, y: 0.6348772, z: -0.012957155}
 --- !u!4 &1374478317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
@@ -13112,6 +13505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13172,6 +13569,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13268,10 +13669,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1834808632}
-  - {fileID: 1167672903}
-  - {fileID: 2116960024}
-  - {fileID: 1933179279}
+  - {fileID: 551860540}
+  - {fileID: 845752322}
+  - {fileID: 285174590}
+  - {fileID: 1480722442}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1385313052 stripped
@@ -13340,6 +13741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-intersection
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13400,6 +13805,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13555,7 +13964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13592,6 +14001,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13840,6 +14253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13951,6 +14368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14043,6 +14464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14103,6 +14528,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 93983efa363dcff488c32ed434938641, type: 3}
       propertyPath: m_Name
       value: road-roundabout
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 93983efa363dcff488c32ed434938641, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14236,6 +14665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14302,6 +14735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-line (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14367,6 +14804,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14486,6 +14927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-line (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14552,6 +14997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14591,7 +15040,7 @@ Transform:
   m_GameObject: {fileID: 1463325422}
   serializedVersion: 2
   m_LocalRotation: {x: -0.21295151, y: 0.7820247, z: -0.36108753, w: -0.46119934}
-  m_LocalPosition: {x: -0.41999996, y: 1.14, z: 0.58}
+  m_LocalPosition: {x: -0.41999996, y: 1.164, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14788,6 +15237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-side-entry (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cf8a9c2833cce54985a41089c3cfcbc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14848,6 +15301,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14910,6 +15367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14971,6 +15432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14985,6 +15450,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
   m_PrefabInstance: {fileID: 2103992429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1480722442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+  m_PrefabInstance: {fileID: 5156842305092085645}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1486927733 stripped
 Transform:
@@ -15046,6 +15516,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b091fd88645e2d240895d67664d4bd18, type: 3}
       propertyPath: m_Name
       value: road-curve-intersection
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b091fd88645e2d240895d67664d4bd18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15180,6 +15654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-end-round (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15240,6 +15718,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
       propertyPath: m_Name
       value: road-end-round
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15368,6 +15850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15429,6 +15915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15489,6 +15979,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15571,6 +16065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15631,6 +16129,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15693,6 +16195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15753,6 +16259,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
       propertyPath: m_Name
       value: road-crossroad-line (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15951,6 +16461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16011,6 +16525,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
       propertyPath: m_Name
       value: road-intersection (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d8df7aab23514149a482f6c8e3bcd1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16077,6 +16595,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
       propertyPath: m_Name
       value: road-crossroad-line
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16148,6 +16670,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16361,6 +16887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16386,71 +16916,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
   m_PrefabInstance: {fileID: 1638937925}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1666812034
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1384324320}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.18000007
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.22399999
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.60876286
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7933523
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 105
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2049929814205202405, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 858c96229325dab42a5e588e9fdfb98a, type: 2}
-    - target: {fileID: 919132149155446097, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Name
-      value: Zombie A
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 891ea1b9310083949abc345ff8c85590, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 615079a23b765564fa6915c541368ffd, type: 3}
 --- !u!4 &1675590344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39c2e2722f638d149bc5924d24fe818a, type: 3}
@@ -16511,6 +16976,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16573,11 +17042,156 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+--- !u!1 &1688827836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1688827841}
+  - component: {fileID: 1688827840}
+  - component: {fileID: 1688827839}
+  - component: {fileID: 1688827838}
+  - component: {fileID: 1688827837}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1688827837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688827836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.016666668
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 1fd1a55008e2ec9439c9f59e936bdbb3, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!65 &1688827838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688827836}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1688827839
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688827836}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1688827840
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688827836}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1688827841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688827836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.9245014, y: -0.474, z: 3.7049205}
+  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1691033255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16633,6 +17247,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7cf8a9c2833cce54985a41089c3cfcbc, type: 3}
       propertyPath: m_Name
       value: road-side-entry
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cf8a9c2833cce54985a41089c3cfcbc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16765,6 +17383,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16909,71 +17531,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c4fc24219b4d2a4c8d3807763b86154, type: 3}
---- !u!1001 &1702982258
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1384324320}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70710784
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.70710576
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2049929814205202405, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d0e17cc60498efe4da55c4d426d76d9c, type: 2}
-    - target: {fileID: 919132149155446097, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Name
-      value: Zombie B
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 891ea1b9310083949abc345ff8c85590, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 615079a23b765564fa6915c541368ffd, type: 3}
 --- !u!4 &1703695391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
@@ -17034,6 +17591,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17153,6 +17714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-line (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17219,11 +17784,75 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-path (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+--- !u!1 &1727353077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727353079}
+  - component: {fileID: 1727353078}
+  m_Layer: 0
+  m_Name: CharacterSpawnner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1727353078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727353077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 002bd915bdef658469323a8774e52334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - position: {x: -2.12, y: 0, z: 0}
+    isZombie: 1
+  - position: {x: -3.09, y: 0, z: 0.43}
+    isZombie: 0
+  - position: {x: -1.64, y: 0, z: 0.43}
+    isZombie: 0
+  - position: {x: -0.92, y: 0, z: 0.43}
+    isZombie: 1
+  zombiePrefabs:
+  - {fileID: 5713728536766611002, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+  - {fileID: 5463501152435691840, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+  humanPrefabs:
+  - {fileID: 1847229855487448856, guid: 6b6114a1f580f544da22539192640308, type: 3}
+  - {fileID: 5900337836055634165, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+  gizmoRadius: 0.15
+--- !u!4 &1727353079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727353077}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1733485585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17407,6 +18036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-bend
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 737a55af495cb9a419a521bcf1dd98a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17473,6 +18106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17533,6 +18170,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
       propertyPath: m_Name
       value: road-crossing
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17595,6 +18236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17655,6 +18300,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17722,6 +18371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17787,6 +18440,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17933,6 +18590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18026,6 +18687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossroad-path (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18096,6 +18761,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18393,6 +19062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18453,6 +19126,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18605,7 +19282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed18ba8c713cd4144b33e95c80ca44bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed18ba8c713cd4144b33e95c80ca44bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18650,6 +19327,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ed18ba8c713cd4144b33e95c80ca44bb, type: 3}
       propertyPath: m_Name
       value: road-square
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed18ba8c713cd4144b33e95c80ca44bb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18777,11 +19458,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832868077}
   m_CullTransparentMesh: 1
---- !u!4 &1834808632 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-  m_PrefabInstance: {fileID: 366444274}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1835820702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18837,6 +19513,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18898,6 +19578,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18964,6 +19648,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19288,6 +19976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19439,6 +20131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-bend (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 737a55af495cb9a419a521bcf1dd98a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19519,6 +20215,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19642,6 +20342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19707,6 +20411,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19788,6 +20496,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
       propertyPath: m_Name
       value: road-crossing (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19973,6 +20685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20033,6 +20749,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20095,16 +20815,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
---- !u!4 &1933179279 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-  m_PrefabInstance: {fileID: 1702982258}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1937123127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9f4c68618d8bcbd4e8c15f7064adb2d1, type: 3}
@@ -20232,6 +20951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20292,6 +21015,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20354,6 +21081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20414,6 +21145,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
       propertyPath: m_Name
       value: road-bend-square (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 88ab65ec502ce64478518e15c63c4834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20617,6 +21352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20683,6 +21422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-split
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd6ae54b4f2e1344b8524a011e20645f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20743,6 +21486,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20894,6 +21641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-crossing (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab3c10bf96e1c454aa696d7fff0dc24c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20955,6 +21706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21015,6 +21770,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
       propertyPath: m_Name
       value: road-end-round (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21148,6 +21907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21213,6 +21976,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
       propertyPath: m_Name
       value: road-crossroad-path (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a2a282dc62a8c44fb1022a12eb38bb9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21418,6 +22185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21478,6 +22249,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 56976142fc7f0f54881c513c4c414a8f, type: 3}
       propertyPath: m_Name
       value: road-crossroad
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 56976142fc7f0f54881c513c4c414a8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21550,6 +22325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-end-round (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f250dc1e6a8ff4f4e863cd6606e6e5be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21611,16 +22390,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: road-straight (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
---- !u!4 &2116960024 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 615079a23b765564fa6915c541368ffd, type: 3}
-  m_PrefabInstance: {fileID: 1666812034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2125847099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21780,6 +22558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sign-highway-detailed
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 542755cbd407a0b45985ffa2671d1f8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21845,6 +22627,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
       propertyPath: m_Name
       value: road-straight (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ba57b87ea5626a489e6cb83b32cb356, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22010,6 +22796,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3315880ecd8b4424ea39da18a5d0c22a, type: 3}
   m_PrefabInstance: {fileID: 1002564241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &86720713807748731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1384324320}
+    m_Modifications:
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.44700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.26799998
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 374203728487295125, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900337836055634165, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
+      propertyPath: m_Name
+      value: HumanB
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14428344b4eb97b468276a5270db5f0d, type: 3}
 --- !u!4 &543450651962592983
 Transform:
   m_ObjectHideFlags: 0
@@ -22083,6 +22926,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1774607944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1851998012726078789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1384324320}
+    m_Modifications:
+    - target: {fileID: 5713728536766611002, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_Name
+      value: ZombieA
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.22399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.60876286
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7933523
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294059886066652021, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d82eef3c42759934da3e8b58f0fbe4ab, type: 3}
 --- !u!1 &2073144648414181670
 GameObject:
   m_ObjectHideFlags: 0
@@ -22259,6 +23159,63 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &5156842305092085645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1384324320}
+    m_Modifications:
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263679103937574129, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463501152435691840, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
+      propertyPath: m_Name
+      value: ZombieB
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e034cb5207a4a7744a47f2129a6f9bbc, type: 3}
 --- !u!33 &5251295500907825657
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -22267,6 +23224,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073144648414181670}
   m_Mesh: {fileID: 1781033517927350220, guid: 70267c8406663b345b854437b3ef1823, type: 3}
+--- !u!1001 &5412357835786147540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1384324320}
+    m_Modifications:
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58409476
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.012801787
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519547311826142010, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847229855487448856, guid: 6b6114a1f580f544da22539192640308, type: 3}
+      propertyPath: m_Name
+      value: HumanA
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b6114a1f580f544da22539192640308, type: 3}
 --- !u!1 &5558560330998233295
 GameObject:
   m_ObjectHideFlags: 0
@@ -22583,3 +23597,5 @@ SceneRoots:
   - {fileID: 1303187929}
   - {fileID: 311791866}
   - {fileID: 420953899}
+  - {fileID: 1688827841}
+  - {fileID: 1727353079}
