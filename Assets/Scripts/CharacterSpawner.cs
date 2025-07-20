@@ -32,18 +32,21 @@ public class CharacterSpawner : MonoBehaviour
     {
         foreach (var point in spawnPoints)
         {
+            
+            GameObject prefab = point.isZombie
+                ? GetRandomPrefab(zombiePrefabs)
+                : GetRandomPrefab(humanPrefabs);
+            Character character = prefab.GetComponent<Character>();
             if (point.isZombie)
             {
                 GameManager.Instance.ZombieKills++;
+                GameManager.Instance.RegisterCharacter(character);
             }
             else
             {
                 GameManager.Instance.HumanKills++;
+                GameManager.Instance.RegisterCharacter(character);
             }
-            GameObject prefab = point.isZombie
-                ? GetRandomPrefab(zombiePrefabs)
-                : GetRandomPrefab(humanPrefabs);
-
             Instantiate(prefab, point.position, Quaternion.identity);
         }
     }

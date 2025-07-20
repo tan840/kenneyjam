@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -23,6 +24,14 @@ public class UIManager : MonoBehaviour
     {
         HideAllPannel();
         mainMenu.gameObject.SetActive(true);
+    }
+    public void ReplayLevel()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
     public void ShowGameScene()
     {

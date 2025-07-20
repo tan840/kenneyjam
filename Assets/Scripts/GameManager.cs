@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         m_UIManager = UIManager.Instance;
         //CurrentState = GameState.MainMenu;
-        //SetState(CurrentState);
+       SetState(GameState.MainMenu);
     }
     public void SetState(GameState newState)
     {
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
-        Debug.Log("Current State: " + newState);
+        //Debug.Log("Current State: " + newState);
     }
     public void RegisterCharacter(Character character)
     {
@@ -102,7 +102,10 @@ public class GameManager : MonoBehaviour
     {
         if (humanKillText) humanKillText.text = $"{humanKills}";
         if (zombieKillText) zombieKillText.text = $"{zombieKills}";
-
+        if(zombieKills <= 0)
+        {
+            SetState(GameState.GameOver);
+        }
         else if (humanKills <= 0)
         {
             SetState(GameState.GameWon);

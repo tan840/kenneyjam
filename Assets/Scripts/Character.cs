@@ -25,7 +25,7 @@ public abstract class Character : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
-
+        GameManager.Instance.UnregisterCharacter(this);
         // Disable physics/colliders or play death animation
         gameObject.SetActive(false); // Quick and easy for now
     }

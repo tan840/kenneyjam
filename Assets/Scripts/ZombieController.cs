@@ -16,10 +16,12 @@ public class ZombieAI : MonoBehaviour
     {
         if (!character.isZombie) return;
 
-        if (GameManager.Instance.humans.Count <= GameManager.Instance.zombies.Count)
+        if (GameManager.Instance.HumanKills < GameManager.Instance.ZombieKills)
         {
+            print("follow");
             MoveToNearestHuman();
         }
+        //print("dontfollow");
     }
 
     void MoveToNearestHuman()
