@@ -63,7 +63,7 @@ public class CharacterSpawner : MonoBehaviour
 
         foreach (var point in spawnPoints)
         {
-            Gizmos.color = point.isZombie ? Color.red : Color.green;
+            Gizmos.color = point.isZombie ? Color.blue : Color.green;
             Gizmos.DrawSphere(point.position, gizmoRadius);
         }
     }

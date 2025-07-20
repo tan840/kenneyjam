@@ -12,17 +12,17 @@ public class ZombieAI : MonoBehaviour
         character = GetComponent<Character>();
     }
 
-    void Update()
-    {
-        if (!character.isZombie) return;
+    //void Update()
+    //{
+    //    if (!character.isZombie) return;
 
-        if (GameManager.Instance.HumanKills < GameManager.Instance.ZombieKills)
-        {
-            print("follow");
-            MoveToNearestHuman();
-        }
-        //print("dontfollow");
-    }
+    //    if (GameManager.Instance.HumanKills < GameManager.Instance.ZombieKills)
+    //    {
+    //        print("follow");
+    //        MoveToNearestHuman();
+    //    }
+    //    //print("dontfollow");
+    //}
 
     void MoveToNearestHuman()
     {
