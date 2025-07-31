@@ -3,16 +3,19 @@ using UnityEngine;
 public abstract class Character : MonoBehaviour
 {
     public float health = 100f;
-    protected bool isDead = false;
+    private bool isDead = false;
     public bool isZombie = false;
+
+    public bool IsDead { get => isDead;}
+
     protected virtual void Start()
     {
-        // Optional: Set up any common things
+
     }
 
     public virtual void TakeDamage(float amount)
     {
-        if (isDead) return;
+        if (IsDead) return;
 
         health -= amount;
         if (health <= 0)
@@ -30,18 +33,17 @@ public abstract class Character : MonoBehaviour
         else
             SoundManager.Instance.PlayHumanKillSound();
         GameManager.Instance.UnregisterCharacter(this);
-        // Disable physics/colliders or play death animation
-        gameObject.SetActive(false); // Quick and easy for now
+        gameObject.SetActive(false);
     }
+    public abstract void OnEnemyDetect();
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isDead) return;
+        if (IsDead) return;
 
         if (other.CompareTag("Player"))
         {
-            //Debug.Log("Dead");
-            TakeDamage(100f); // Instant death
+            TakeDamage(100f); 
         }
     }
 }
