@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2400942048066195153}
   - component: {fileID: 604589060582607286}
   - component: {fileID: 5139242887123354956}
+  - component: {fileID: 7164761767842071082}
   m_Layer: 7
   m_Name: HumanA
   m_TagString: Human
@@ -50,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isZombie: 0
+  currentState: 0
 --- !u!195 &2400942048066195153
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -114,6 +116,21 @@ CapsuleCollider:
   m_Height: 0.24
   m_Direction: 1
   m_Center: {x: 0, y: 0.14, z: 0}
+--- !u!114 &7164761767842071082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847229855487448856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50ff01735950a24f8f357aa9ca1b296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpeed: 0.3
+  patrolRadius: 10
+  patrolWaitTime: 2
 --- !u!1001 &9135068774176575414
 PrefabInstance:
   m_ObjectHideFlags: 0

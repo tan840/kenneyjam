@@ -1,64 +1,93 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    public float maxSpeed = 20f;
-    public float acceleration = 10f;
-    public float deceleration = 5f;
-    public float turnSpeed = 50f;
-    public float damping = 3f;
+    [Header("Wheel Colliders")]
+    public WheelCollider frontLeftCollider;
+    public WheelCollider frontRightCollider;
+    public WheelCollider rearLeftCollider;
+    public WheelCollider rearRightCollider;
 
-    public Transform frontLeftWheel;
-    public Transform frontRightWheel;
-    public float maxWheelTurnAngle = 30f; // Visual turn angle for wheels
+    [Header("Wheel Meshes")]
+    public Transform frontLeftMesh;
+    public Transform frontRightMesh;
+    public Transform rearLeftMesh;
+    public Transform rearRightMesh;
 
-    private float currentSpeed = 0f;
-    private float currentSteerInput = 0f;
+    [Header("Car Settings")]
+    public float motorForce = 1500f;
+    public float brakeForce = 3000f;
+    public float maxSteerAngle = 30f;
 
-    void Update()
+    private float currentSteerAngle;
+    private float currentBrakeForce;
+    private float currentAcceleration;
+
+    private Rigidbody rb;
+    VehicleInputSystem inputSystem;
+
+    void Start()
     {
-        float verticalInput = Input.GetAxis("Vertical");   // W/S or Up/Down
-        float horizontalInput = Input.GetAxis("Horizontal"); // A/D or Left/Right
-
-        // Acceleration and Deceleration
-        if (verticalInput > 0f)
-        {
-            currentSpeed += acceleration * Time.deltaTime;
-        }
-        else if (verticalInput < 0f)
-        {
-            currentSpeed -= deceleration * Time.deltaTime;
-        }
-        else
-        {
-            if (currentSpeed > 0f)
-                currentSpeed -= damping * Time.deltaTime;
-            else if (currentSpeed < 0f)
-                currentSpeed += damping * Time.deltaTime;
-
-            if (Mathf.Abs(currentSpeed) < 0.1f)
-                currentSpeed = 0f;
-        }
-
-        currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed / 2f, maxSpeed);
-
-        transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
-
-        if (Mathf.Abs(currentSpeed) > 0.1f)
-        {
-            float turnAmount = horizontalInput * turnSpeed * Time.deltaTime * Mathf.Sign(currentSpeed);
-            transform.Rotate(0f, turnAmount, 0f);
-        }
-
-        RotateWheels(currentSteerInput);
+        rb = GetComponent<Rigidbody>();
+        inputSystem = GetComponent<VehicleInputSystem>();
     }
 
-    void RotateWheels(float steerInput)
+    void FixedUpdate()
     {
-        float targetAngle = steerInput * maxWheelTurnAngle;
-        if (frontLeftWheel != null)
-            frontLeftWheel.localRotation = Quaternion.Euler(0f, targetAngle, 0f);
-        if (frontRightWheel != null)
-            frontRightWheel.localRotation = Quaternion.Euler(0f, targetAngle, 0f);
+        HandleMotor();
+        HandleSteering();
+        UpdateWheelMeshes();
+    }
+
+    private void HandleMotor()
+    {
+        //float verticalInput = Input.GetAxis("Vertical");
+        //print("Horizontal" + inputSystem.GetVerticalAxis());
+        float verticalInput = inputSystem.GetVerticalAxis();
+
+        currentAcceleration = verticalInput * motorForce;
+        currentBrakeForce = Input.GetKey(KeyCode.Space) ? brakeForce : 0f;
+
+        rearLeftCollider.motorTorque = currentAcceleration;
+        rearRightCollider.motorTorque = currentAcceleration;
+
+        ApplyBrakes();
+    }
+
+    private void ApplyBrakes()
+    {
+        frontLeftCollider.brakeTorque = currentBrakeForce;
+        frontRightCollider.brakeTorque = currentBrakeForce;
+        rearLeftCollider.brakeTorque = currentBrakeForce;
+        rearRightCollider.brakeTorque = currentBrakeForce;
+    }
+
+    private void HandleSteering()
+    {
+        //float horizontalInput = Input.GetAxis("Horizontal");
+        //print("Horizontal" + inputSystem.GetHorizontalAxis());
+        float horizontalInput = inputSystem.GetHorizontalAxis();
+        currentSteerAngle = maxSteerAngle * horizontalInput;
+
+        frontLeftCollider.steerAngle = currentSteerAngle;
+        frontRightCollider.steerAngle = currentSteerAngle;
+    }
+
+    private void UpdateWheelMeshes()
+    {
+        UpdateSingleWheel(frontLeftCollider, frontLeftMesh);
+        UpdateSingleWheel(frontRightCollider, frontRightMesh);
+        UpdateSingleWheel(rearLeftCollider, rearLeftMesh);
+        UpdateSingleWheel(rearRightCollider, rearRightMesh);
+    }
+
+    private void UpdateSingleWheel(WheelCollider col, Transform wheelMesh)
+    {
+        Vector3 pos;
+        Quaternion rot;
+        col.GetWorldPose(out pos, out rot);
+        wheelMesh.position = pos;
+        wheelMesh.rotation = rot;
     }
 }

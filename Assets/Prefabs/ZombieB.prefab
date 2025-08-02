@@ -131,7 +131,7 @@ MonoBehaviour:
   m_attackRange: 0.2
   patrolRadius: 10
   patrolWaitTime: 2
-  patrolSpeed: 0.03
+  patrolSpeed: 0.05
   chaseSpeed: 0.5
 --- !u!1001 &6697642108171464636
 PrefabInstance:

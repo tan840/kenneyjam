@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
         m_UIManager = UIManager.Instance;
         //CurrentState = GameState.MainMenu;
        SetState(GameState.MainMenu);
+        Application.targetFrameRate = 60;
     }
     public void SetState(GameState newState)
     {

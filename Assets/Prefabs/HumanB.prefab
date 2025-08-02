@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 374203728487295125}
   - component: {fileID: 3931310835429556044}
   - component: {fileID: 4130235095231153488}
-  - component: {fileID: 7658124470880029690}
+  - component: {fileID: -990105922979838992}
+  - component: {fileID: 4092297925522612223}
+  - component: {fileID: 3706936383812051910}
   m_Layer: 0
   m_Name: HumanB
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,6 +50,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  isZombie: 0
+  currentState: 0
 --- !u!195 &4130235095231153488
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -58,20 +62,54 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.05
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 0.5
+  m_Acceleration: 2
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 1000
+  m_StoppingDistance: 0.1
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 0.2
   m_BaseOffset: -0.01
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
---- !u!65 &7658124470880029690
-BoxCollider:
+  m_WalkableMask: 1
+  m_ObstacleAvoidanceType: 1
+--- !u!114 &-990105922979838992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900337836055634165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50ff01735950a24f8f357aa9ca1b296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpeed: 0.3
+  patrolRadius: 10
+  patrolWaitTime: 2
+--- !u!114 &4092297925522612223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900337836055634165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35a7635f7064d94688cc7c1c30afa66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRadius: 0.6
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  targetTag: Zombie
+  character: {fileID: 0}
+  nearestTarget: {fileID: 0}
+--- !u!136 &3706936383812051910
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -85,12 +123,14 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.10368347, y: 0.25415438, z: 0.096860796}
-  m_Center: {x: 0.0013523102, y: 0.13995305, z: -0.0023767203}
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.24
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.14, z: 0}
 --- !u!1001 &5064889848004799173
 PrefabInstance:
   m_ObjectHideFlags: 0

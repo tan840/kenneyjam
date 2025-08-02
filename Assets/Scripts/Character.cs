@@ -37,13 +37,15 @@ public abstract class Character : MonoBehaviour
     }
     public abstract void OnEnemyDetect();
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
+        print(collision.collider.name);
         if (IsDead) return;
 
-        if (other.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player"))
         {
-            TakeDamage(100f); 
+            TakeDamage(100f);
         }
     }
 }
