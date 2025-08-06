@@ -1,3 +1,4 @@
+using System.Collections;
 using System.IO.Compression;
 using System.Linq;
 using Unity.Behavior;
@@ -9,19 +10,26 @@ public class TargetDetector : MonoBehaviour
     public LayerMask targetMask;
     public string targetTag;
     [SerializeField] Character character;
-
+    [SerializeField] static float m_checkFrequency = 0.3f;
+    WaitForSeconds checkFrequency = new WaitForSeconds(m_checkFrequency);
     //[HideInInspector]
     public Transform nearestTarget;
 
     private void Start()
     {
         character = GetComponent<Character>();
+        StartCoroutine(CheckForTarget());
     }
 
-    void Update()
+    IEnumerator CheckForTarget()
     {
-        if(character.IsDead) return;
-        DetectTarget();
+        //if(character.IsDead) return;
+        while (true)
+        {
+            DetectTarget();
+            yield return checkFrequency;
+        }
+
     }
 
     void DetectTarget()
@@ -40,7 +48,7 @@ public class TargetDetector : MonoBehaviour
                 {
                     closestDistance = dist;
                     closest = hit.transform;
-                    character.OnEnemyDetect();
+                    //character.OnEnemyDetect();
                 }
             }
         }

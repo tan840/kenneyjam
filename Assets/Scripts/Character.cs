@@ -28,11 +28,11 @@ public abstract class Character : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
-        if (isZombie)
-            SoundManager.Instance.PlayZombieKillSound();
-        else
-            SoundManager.Instance.PlayHumanKillSound();
-        GameManager.Instance.UnregisterCharacter(this);
+        //if (isZombie)
+            //SoundManager.Instance.PlayZombieKillSound();
+        //else
+            //SoundManager.Instance.PlayHumanKillSound();
+        //GameManager.Instance.UnregisterCharacter(this);
         gameObject.SetActive(false);
     }
     public abstract void OnEnemyDetect();
