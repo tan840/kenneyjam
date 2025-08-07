@@ -42,11 +42,13 @@ public class ShootMechanics : MonoBehaviour
     {
         m_canShoot = false;
         yield return shootDelay;
-        GameObject bullet =  Instantiate(m_Bullet, m_FirePoint.position, m_FirePoint.rotation);
-        Rigidbody rb  = bullet.GetComponent<Rigidbody>();
-        rb.linearVelocity = m_FirePoint.forward * bulletSpeed;
+        if (m_Detector.nearestTarget != null)
+        {
+            GameObject bullet = Instantiate(m_Bullet, m_FirePoint.position, m_FirePoint.rotation);
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
+            rb.linearVelocity = m_FirePoint.forward * bulletSpeed;
+        }
         m_canShoot = true;
-
     }
 }
 
