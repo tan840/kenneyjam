@@ -40,7 +40,7 @@ public abstract class Character : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision.collider.name);
+        //print(collision.collider.name);
         if (IsDead) return;
 
         if (collision.collider.CompareTag("Player"))

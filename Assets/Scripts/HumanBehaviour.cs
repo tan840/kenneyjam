@@ -9,7 +9,7 @@ public class HumanBehaviour : MonoBehaviour
     //Patrol
     [SerializeField] float patrolSpeed = 0.3f;
     [SerializeField] float patrolRadius = 10f;
-    [SerializeField] float patrolWaitTime = 2f;
+    //[SerializeField] float patrolWaitTime = 2f;
     private float patrolTimer = 0;
     private Vector3 patrolTarget;
     private bool hasPatrolTarget = false;
